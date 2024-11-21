@@ -1,9 +1,11 @@
 {
     class Car {
+        brand: string;
         model: string;
         year: number;
 
-        constructor(model: string, year: number) {
+        constructor(brand: string, model: string, year: number) {
+            this.brand = brand;
             this.model = model;
             this.year = year;
 
@@ -15,6 +17,6 @@
         }
     }
 
-    const toyota = new Car('Toyota', 2018);
+    const toyota = new Car("Honda", "Civic", 2018);
     toyota.getCarAge();
 }

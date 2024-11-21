@@ -1,7 +1,7 @@
 {
     type Circle = {
         shape: string;
-        redius: number;
+        radius: number;
     }
     type Rectangle = {
         shape: string;
@@ -10,18 +10,18 @@
 
     }
 
-    const calculateShapeArea = (shape: Circle | Rectangle) =>{
-        if("redius" in shape){
-            const area = Math.PI * shape.redius * shape.redius;
-             console.log(area)
-        } else{
+    const calculateShapeArea = (shape: Circle | Rectangle) => {
+        if ("radius" in shape) {
+            const area = Math.PI * shape.radius * shape.radius;
+            console.log(area)
+        } else {
             const area2 = shape.height * shape.width;
             console.log(area2)
         }
     }
 
-    const circleArea = calculateShapeArea({shape:"circle", redius:6})
+    const circleArea = calculateShapeArea({ shape: "circle", radius: 6 })
     // console.log(circleArea)
 
-    const ractangleArea = calculateShapeArea({shape:"rectangle", width: 12, height: 16})
+    const ractangleArea = calculateShapeArea({ shape: "rectangle", width: 12, height: 16 })
 }

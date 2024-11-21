@@ -1,13 +1,13 @@
 {
-    const aString = 'i love typescript , love and love typescript'
 
-    function countWordOccurrences(sent: string, word: string){
+    function countWordOccurrences(sent: string, word: string) {
+
         const count = sent.split(' ')
-        const totalUse = count.filter((matc)=> matc == word).length
+        const totalUse = count.filter((matc) => matc.toLowerCase() == word.toLowerCase()).length
         console.log(totalUse)
     }
 
-    countWordOccurrences(aString, 'love')
-    
+    countWordOccurrences("I love typescript", "typescript")
+
 
 }
